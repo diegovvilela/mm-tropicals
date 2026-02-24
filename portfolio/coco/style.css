@@ -602,4 +602,167 @@ h3 {
     word-break: keep-all;
 }
 
+/* Region section styling similar to banana page */
+.regions-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.regions-map {
+    text-align: center;
+}
+
+.brazil-map {
+    max-width: 500px !important;
+    width: 500px !important;
+    height: auto !important;
+    max-height: 600px !important;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.brazil-map:hover {
+    transform: scale(1.02);
+}
+
+.regions-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.region-highlight h3 {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.region-highlight p {
+    color: var(--medium-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.city-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-green);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.city-icon {
+    background: var(--primary-green);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.city-info h4 {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.city-info p {
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .regions-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .brazil-map {
+        max-width: 350px !important;
+        width: 350px !important;
+    }
+    
+    .cities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .city-item {
+        padding: 1.5rem;
+        gap: 0.8rem;
+    }
+    
+    .city-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .city-info h4 {
+        font-size: 1.2rem;
+    }
+    
+    .city-info p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .brazil-map {
+        max-width: 280px !important;
+        width: 280px !important;
+    }
+    
+    .region-highlight h3 {
+        font-size: 1.5rem;
+    }
+    
+    .region-highlight p {
+        font-size: 0.9rem;
+    }
+    
+    .city-item {
+        padding: 1.2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
 
