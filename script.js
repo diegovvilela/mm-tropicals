@@ -86,6 +86,7 @@ const translations = {
         'contact.form.fruits_required': 'Por favor, selecione pelo menos uma fruta.',
         'contact.form.message': 'Mensagem',
         'contact.form.submit': 'Enviar Mensagem',
+        'floating.quote': 'Solicitar Cotação',
         'footer.text': '© 2026 Marques & Mariano Tropicals. Todos os direitos reservados.'
     },
     'en': {
@@ -175,6 +176,7 @@ const translations = {
         'contact.form.fruits_required': 'Please select at least one fruit.',
         'contact.form.message': 'Message',
         'contact.form.submit': 'Send Message',
+        'floating.quote': 'Request Quote',
         'footer.text': '© 2026 Marques & Mariano Tropicals. All rights reserved.'
     },
     'es': {
@@ -272,6 +274,7 @@ const translations = {
         'contact.form.fruits_required': 'Por favor, seleccione al menos una fruta.',
         'contact.form.message': 'Mensaje',
         'contact.form.submit': 'Enviar Mensaje',
+        'floating.quote': 'Solicitar Cotización',
         'footer.text': '© 2026 Marques & Mariano Tropicals. Todos los derechos reservados.'
     }
 };
