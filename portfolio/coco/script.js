@@ -1,33 +1,20 @@
-// Watermelon specific translations
-const watermelonTranslations = {
+// Coconut specific translations
+const coconutTranslations = {
     'pt-BR': {
-        'watermelon.title': 'Melancia',
-        'watermelon.subtitle': 'Melancias premium selecionadas das melhores regiões produtoras do Brasil. Com polpa vermelha intensa, alto teor de água e doçura excepcional, nossas melancias atendem aos mais rigorosos padrões internacionais de exportação.',
-        'watermelon.seasonality.title': 'Sazonalidade',
-        'watermelon.seasonality.high': 'Alta Disponibilidade',
-        'watermelon.seasonality.medium': 'Média Disponibilidade',
-        'watermelon.regions.title': 'Nossos Parceiros Produtores pelo Brasil',
-        'watermelon.regions.primary': 'Principais Produtores',
-        'watermelon.regions.secondary': 'Boa Expressividade',
-        'watermelon.regions.uruana': 'Berço da melanicultura irrigada brasileira desde 1968. Uruana transformou-se no maior polo tecnológico de melancia do país com produtividade de 45 ton/hectare.',
-        'watermelon.regions.teixeira': 'Maior produtor nacional com 391.528 toneladas anuais. Teixeira de Freitas lidera a expansão com crescimento de 36,77% em área cultivada, combinando solos arenosos ideais e irrigação de ponta.',
-        'watermelon.regions.rn': 'Segundo maior produtor com 283.640 toneladas anuais. Mossoró destaca-se pela qualidade premium e tecnologia de irrigação, beneficiada pelo clima semiárido que permite cultivo o ano todo.',
-        'watermelon.regions.pe': 'Polo de inovação no semiárido com 97.975 toneladas anuais. Petrolina revolucionou o cultivo com técnicas da Embrapa, alcançando produtividades recordes de até 61 toneladas por hectare.',
-        'watermelon.varieties.title': 'Variedades',
-        'watermelon.varieties.seedless.title': 'Seedless',
-        'watermelon.varieties.seedless.description': 'Melancias sem sementes, ideais para consumo direto e exportação premium.',
-        'watermelon.varieties.seeded.title': 'Com Sementes',
-        'watermelon.varieties.seeded.description': 'Variedades tradicionais com sementes, sabor intenso e alta durabilidade.',
-        'watermelon.commercialization.title': 'Comercialização',
-        'watermelon.commercialization.packaging.title': 'Embalagem',
-        'watermelon.commercialization.packaging.net': 'Peso Líquido:',
-        'watermelon.commercialization.packaging.gross': 'Peso Bruto:',
-        'watermelon.commercialization.pallet.title': 'Pallet',
-        'watermelon.commercialization.pallet.boxes': 'Caixas por Pallet:',
-        'watermelon.commercialization.calibers.title': 'Calibres',
-        'watermelon.contact.title': 'Interessado em Melancia?',
-        'watermelon.contact.subtitle': 'Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.',
-        'watermelon.contact.cta': 'Solicitar Cotação',
+        'coconut.title': 'Coco',
+        'coconut.subtitle': 'Fruto tropical versátil, valorizado pela água refrescante e polpa nutritiva. Rico em eletrólitos naturais e com múltiplas aplicações comerciais.',
+        'coconut.seasonality.title': 'Sazonalidade',
+        'coconut.seasonality.high': 'Alta Disponibilidade - Ano Todo',
+        'coconut.regions.title': 'Nossos Parceiros pelo Brasil',
+        'coconut.regions.ceara.title': 'Ceará - Paraipaba',
+        'coconut.regions.ceara.description': 'Região privilegiada com clima tropical úmido, localizada na zona costeira do Ceará. Paraipaba oferece condições ideais para o cultivo de coco com alta produtividade durante todo o ano.',
+        'coconut.regions.paraipaba': 'Principal polo produtor de coco da região costeira, beneficiando-se da proximidade com o oceano, águas subterrâneas de qualidade e clima tropical ideal para produção ano todo.',
+        'coconut.varieties.title': 'Variedades',
+        'coconut.varieties.green.title': 'Coco Verde',
+        'coconut.varieties.green.description': 'Coco jovem com água abundante e refrescante, ideal para consumo direto da água natural.',
+        'coconut.contact.title': 'Interessado em Coco?',
+        'coconut.contact.subtitle': 'Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.',
+        'coconut.contact.cta': 'Solicitar Cotação',
         'months.jan': 'Jan',
         'months.feb': 'Fev',
         'months.mar': 'Mar',
@@ -42,33 +29,20 @@ const watermelonTranslations = {
         'months.dec': 'Dez'
     },
     'en': {
-        'watermelon.title': 'Watermelon',
-        'watermelon.subtitle': 'Premium watermelons selected from Brazil\'s finest producing regions. With intense red pulp, high water content and exceptional sweetness, our watermelons meet the most rigorous international export standards.',
-        'watermelon.seasonality.title': 'Seasonality',
-        'watermelon.seasonality.high': 'High Availability',
-        'watermelon.seasonality.medium': 'Medium Availability',
-        'watermelon.regions.title': 'Our Producer Partners Across Brazil',
-        'watermelon.regions.primary': 'Main Producers',
-        'watermelon.regions.secondary': 'Good Expressiveness',
-        'watermelon.regions.uruana': 'Birthplace of Brazilian irrigated watermelon farming since 1968. Uruana became the country\'s largest technological watermelon hub with 45 tons/hectare productivity.',
-        'watermelon.regions.teixeira': 'Brazil\'s largest producer with 391,528 tons annually. Teixeira de Freitas leads expansion with 36.77% growth in cultivated area, combining ideal sandy soils and cutting-edge irrigation.',
-        'watermelon.regions.rn': 'Second largest producer with 283,640 tons annually. Mossoró stands out for premium quality and irrigation technology, benefited by semi-arid climate allowing year-round cultivation.',
-        'watermelon.regions.pe': 'Semi-arid innovation hub with 97,975 tons annually. Petrolina revolutionized cultivation with Embrapa techniques, achieving record productivities up to 61 tons per hectare.',
-        'watermelon.varieties.title': 'Varieties',
-        'watermelon.varieties.seedless.title': 'Seedless',
-        'watermelon.varieties.seedless.description': 'Seedless watermelons, ideal for direct consumption and premium export.',
-        'watermelon.varieties.seeded.title': 'Seeded',
-        'watermelon.varieties.seeded.description': 'Traditional varieties with seeds, intense flavor and high durability.',
-        'watermelon.commercialization.title': 'Commercialization',
-        'watermelon.commercialization.packaging.title': 'Packaging',
-        'watermelon.commercialization.packaging.net': 'Net Weight:',
-        'watermelon.commercialization.packaging.gross': 'Gross Weight:',
-        'watermelon.commercialization.pallet.title': 'Pallet',
-        'watermelon.commercialization.pallet.boxes': 'Boxes per Pallet:',
-        'watermelon.commercialization.calibers.title': 'Calibers',
-        'watermelon.contact.title': 'Interested in Watermelon?',
-        'watermelon.contact.subtitle': 'Contact us for more information about availability, prices and technical specifications.',
-        'watermelon.contact.cta': 'Request Quote',
+        'coconut.title': 'Coconut',
+        'coconut.subtitle': 'Versatile tropical fruit valued for its refreshing water and nutritious pulp. Rich in natural electrolytes with multiple commercial applications.',
+        'coconut.seasonality.title': 'Seasonality',
+        'coconut.seasonality.high': 'High Availability - Year Round',
+        'coconut.regions.title': 'Our Partners Across Brazil',
+        'coconut.regions.ceara.title': 'Ceará - Paraipaba',
+        'coconut.regions.ceara.description': 'Privileged region with humid tropical climate, located in the coastal zone of Ceará. Paraipaba offers ideal conditions for coconut cultivation with high productivity year-round.',
+        'coconut.regions.paraipaba': 'Main coconut production hub in the coastal region, benefiting from ocean proximity, quality groundwater and ideal tropical climate for year-round production.',
+        'coconut.varieties.title': 'Varieties',
+        'coconut.varieties.green.title': 'Green Coconut',
+        'coconut.varieties.green.description': 'Young coconut with abundant and refreshing water, ideal for direct consumption of natural water.',
+        'coconut.contact.title': 'Interested in Coconut?',
+        'coconut.contact.subtitle': 'Contact us for more information about availability, prices and technical specifications.',
+        'coconut.contact.cta': 'Request Quote',
         'months.jan': 'Jan',
         'months.feb': 'Feb',
         'months.mar': 'Mar',
@@ -83,33 +57,20 @@ const watermelonTranslations = {
         'months.dec': 'Dec'
     },
     'es': {
-        'watermelon.title': 'Sandía',
-        'watermelon.subtitle': 'Sandías premium seleccionadas de las mejores regiones productoras de Brasil. Con pulpa roja intensa, alto contenido de agua y dulzura excepcional, nuestras sandías cumplen los más rigurosos estándares internacionales de exportación.',
-        'watermelon.seasonality.title': 'Estacionalidad',
-        'watermelon.seasonality.high': 'Alta Disponibilidad',
-        'watermelon.seasonality.medium': 'Disponibilidad Media',
-        'watermelon.regions.title': 'Nuestros Socios Productores por Brasil',
-        'watermelon.regions.primary': 'Principales Productores',
-        'watermelon.regions.secondary': 'Buena Expresividad',
-        'watermelon.regions.uruana': 'Cuna de la sandiacultura irrigada brasileña desde 1968. Uruana se transformó en el mayor polo tecnológico de sandía del país con productividad de 45 ton/hectárea.',
-        'watermelon.regions.teixeira': 'Mayor productor nacional con 391.528 toneladas anuales. Teixeira de Freitas lidera la expansión con crecimiento del 36,77% en área cultivada, combinando suelos arenosos ideales e irrigación de punta.',
-        'watermelon.regions.rn': 'Segundo mayor productor con 283.640 toneladas anuales. Mossoró se destaca por calidad premium y tecnología de irrigación, beneficiada por clima semiárido que permite cultivo todo el año.',
-        'watermelon.regions.pe': 'Polo de innovación en el semiárido con 97.975 toneladas anuales. Petrolina revolucionó el cultivo con técnicas de Embrapa, alcanzando productividades récord de hasta 61 toneladas por hectárea.',
-        'watermelon.varieties.title': 'Variedades',
-        'watermelon.varieties.seedless.title': 'Sin Semillas',
-        'watermelon.varieties.seedless.description': 'Sandías sin semillas, ideales para consumo directo y exportación premium.',
-        'watermelon.varieties.seeded.title': 'Con Semillas',
-        'watermelon.varieties.seeded.description': 'Variedades tradicionales con semillas, sabor intenso y alta durabilidad.',
-        'watermelon.commercialization.title': 'Comercialización',
-        'watermelon.commercialization.packaging.title': 'Embalaje',
-        'watermelon.commercialization.packaging.net': 'Peso Neto:',
-        'watermelon.commercialization.packaging.gross': 'Peso Bruto:',
-        'watermelon.commercialization.pallet.title': 'Pallet',
-        'watermelon.commercialization.pallet.boxes': 'Cajas por Pallet:',
-        'watermelon.commercialization.calibers.title': 'Calibres',
-        'watermelon.contact.title': '¿Interesado en Sandía?',
-        'watermelon.contact.subtitle': 'Contáctenos para más información sobre disponibilidad, precios y especificaciones técnicas.',
-        'watermelon.contact.cta': 'Solicitar Cotización',
+        'coconut.title': 'Coco',
+        'coconut.subtitle': 'Fruto tropical versátil valorado por su agua refrescante y pulpa nutritiva. Rico en electrólitos naturales con múltiples aplicaciones comerciales.',
+        'coconut.seasonality.title': 'Estacionalidad',
+        'coconut.seasonality.high': 'Alta Disponibilidad - Todo el Año',
+        'coconut.regions.title': 'Nuestros Socios por Brasil',
+        'coconut.regions.ceara.title': 'Ceará - Paraipaba',
+        'coconut.regions.ceara.description': 'Región privilegiada con clima tropical húmedo, ubicada en la zona costera de Ceará. Paraipaba ofrece condiciones ideales para el cultivo de coco con alta productividad durante todo el año.',
+        'coconut.regions.paraipaba': 'Principal polo productor de coco de la región costera, beneficiándose de la proximidad al océano, aguas subterráneas de calidad y clima tropical ideal para producción todo el año.',
+        'coconut.varieties.title': 'Variedades',
+        'coconut.varieties.green.title': 'Coco Verde',
+        'coconut.varieties.green.description': 'Coco joven con agua abundante y refrescante, ideal para consumo directo del agua natural.',
+        'coconut.contact.title': '¿Interesado en Coco?',
+        'coconut.contact.subtitle': 'Contáctenos para más información sobre disponibilidad, precios y especificaciones técnicas.',
+        'coconut.contact.cta': 'Solicitar Cotización',
         'months.jan': 'Ene',
         'months.feb': 'Feb',
         'months.mar': 'Mar',
@@ -125,18 +86,87 @@ const watermelonTranslations = {
     }
 };
 
-// Extend main translations with watermelon specific ones
-if (typeof translations !== 'undefined') {
-    Object.keys(watermelonTranslations).forEach(lang => {
-        if (translations[lang]) {
-            Object.assign(translations[lang], watermelonTranslations[lang]);
-        }
-    });
-}
+// Wait for DOM and main script to load
+document.addEventListener('DOMContentLoaded', function() {
+    // Extend main translations with coconut specific ones
+    if (typeof translations !== 'undefined') {
+        Object.keys(coconutTranslations).forEach(lang => {
+            if (translations[lang]) {
+                Object.assign(translations[lang], coconutTranslations[lang]);
+            }
+        });
+    }
 
+    // Initialize language functionality
+    initializeLanguage();
     
-    // Inicializar ícones Lucide
+    // Initialize Lucide icons
     if (window.lucide && typeof window.lucide.createIcons === 'function') {
         window.lucide.createIcons();
     }
 });
+
+// Language functionality for portfolio pages
+function initializeLanguage() {
+    const langToggle = document.querySelector('.lang-float-toggle');
+    const langMenu = document.querySelector('.lang-float-menu');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    if (!langToggle || !langMenu) return;
+
+    // Toggle language menu
+    langToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const isExpanded = langToggle.getAttribute('aria-expanded') === 'true';
+        langToggle.setAttribute('aria-expanded', !isExpanded);
+        langMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.lang-float')) {
+            langToggle.setAttribute('aria-expanded', 'false');
+            langMenu.classList.remove('active');
+        }
+    });
+
+    // Handle language selection
+    langOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const selectedLang = this.getAttribute('data-lang');
+            changeLanguage(selectedLang);
+            
+            // Update UI
+            langOptions.forEach(opt => opt.setAttribute('aria-selected', 'false'));
+            this.setAttribute('aria-selected', 'true');
+            
+            // Update toggle button
+            const flagClass = selectedLang === 'pt-BR' ? 'lang-flag--br' : 
+                             selectedLang === 'en' ? 'lang-flag--en' : 'lang-flag--es';
+            const langCode = selectedLang === 'pt-BR' ? 'PT' : 
+                            selectedLang === 'en' ? 'EN' : 'ES';
+            
+            langToggle.querySelector('.lang-flag').className = `lang-flag ${flagClass}`;
+            langToggle.querySelector('.lang-code').textContent = langCode;
+            
+            // Close menu
+            langToggle.setAttribute('aria-expanded', 'false');
+            langMenu.classList.remove('active');
+            
+            // Save preference when user chooses
+            localStorage.setItem('preferredLanguage', selectedLang);
+        });
+    });
+
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferredLanguage') || 'pt-BR';
+    const savedOption = document.querySelector(`[data-lang="${savedLang}"]`);
+    if (savedOption) {
+        savedOption.click();
+    } else {
+        // Apply default language
+        changeLanguage('pt-BR');
+    }
+}
