@@ -233,7 +233,8 @@ body {
     position: absolute;
     left: 0;
     bottom: calc(100% + 10px);
-    width: 180px;
+    width: 200px;
+    max-width: calc(100vw - 36px);
     padding: 8px;
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -252,14 +253,17 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 10px;
+    gap: 12px;
+    padding: 12px 12px;
     border-radius: 10px;
     border: none;
     background: transparent;
     color: var(--white);
     cursor: pointer;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .lang-option:hover {
@@ -1978,5 +1982,49 @@ footer {
     
     .floating-quote-btn .quote-text {
         font-size: 0.55rem;
+    }
+}
+
+/* Language selector mobile optimization */
+@media (max-width: 480px) {
+    .lang-float {
+        left: 10px;
+        bottom: 12px;
+    }
+    
+    .lang-float-menu {
+        width: 180px;
+        max-width: calc(100vw - 20px);
+    }
+    
+    .lang-option {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .lang-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .lang-float {
+        left: 8px;
+        bottom: 10px;
+    }
+    
+    .lang-float-menu {
+        width: 160px;
+        max-width: calc(100vw - 16px);
+        padding: 6px;
+    }
+    
+    .lang-option {
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .lang-name {
+        font-size: 0.85rem;
     }
 }
