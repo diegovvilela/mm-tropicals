@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melão - MM Tropicals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../../index.html" class="logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" data-i18n="nav.home">Início</a></li>
+                    <li><a href="../../index.html#about" data-i18n="nav.about">Sobre</a></li>
+                    <li class="portfolio-menu">
+                        <a href="#" class="portfolio-toggle" data-i18n="nav.portfolio">Portfólio ▼</a>
+                        <div class="portfolio-dropdown">
+                            <a href="../manga/index.html" data-i18n="fruits.mango">Manga</a>
+                            <a href="../melao/index.html" data-i18n="fruits.melon">Melão</a>
+                            <a href="../limao/index.html" data-i18n="fruits.lime">Limão</a>
+                            <a href="../uva/index.html" data-i18n="fruits.grape">Uva</a>
+                            <a href="../melancia/index.html" data-i18n="fruits.watermelon">Melancia</a>
+                            <a href="../banana/index.html" data-i18n="fruits.banana">Banana</a>
+                            <a href="../coco/index.html" data-i18n="fruits.coconut">Coco</a>
+                            <a href="../mamao/index.html" data-i18n="fruits.papaya">Mamão</a>
+                        </div>
+                    </li>
+                    <li><a href="../../index.html#water" data-i18n="nav.quality">Qualidade</a></li>
+                    <li><a href="../../index.html#contact" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fruit-hero">
+            <div class="fruit-hero-image">
+                <img src="imagens/hero.jpeg" alt="Melão" class="hero-fruit-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="fruit-hero-content">
+                    <h1 class="fruit-title" data-i18n="melon.title">Melão</h1>
+                    <p class="fruit-subtitle" data-i18n="melon.subtitle">Fruta doce e aromática, com polpa suculenta e refrescante. Disponível em diversas variedades, cada uma com características únicas de sabor, textura e aparência.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fruit-regions">
+            <div class="container">
+                <h2 data-i18n="melon.regions.title">Principais Regiões Produtoras</h2>
+                <div class="regions-content">
+                    <div class="regions-map">
+                        <img src="imagens/mapamelao.png" alt="Mapa do Brasil - Regiões Produtoras de Melão" class="brazil-map">
+                    </div>
+                    <div class="regions-info">
+                        <div class="region-highlight">
+                            <h3 data-i18n="melon.regions.rn.title">Rio Grande do Norte</h3>
+                            <p data-i18n="melon.regions.rn.description">Principal polo de produção e exportação de melão do Brasil, favorecido por alta luminosidade, baixa umidade relativa e água subterrânea de qualidade, garantindo frutos doces e saudáveis.</p>
+                            
+                            <div class="cities-grid">
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Mossoró - RN</h4>
+                                        <p data-i18n="melon.regions.mossoro.description">Capital nacional do melão, liderando as exportações brasileiras com tecnologia de ponta e certificações internacionais.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-varieties">
+            <div class="container">
+                <h2 data-i18n="melon.varieties.title">Variedades</h2>
+                <div class="varieties-grid">
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/amarelo.png" alt="Melão Amarelo" class="variety-img">
+                        </div>
+                        <h3 data-i18n="melon.varieties.amarelo.title">Melão Amarelo</h3>
+                        <p data-i18n="melon.varieties.amarelo.description">Variedade tradicional brasileira com polpa doce e aromática. Casca amarela característica e formato oval. Ideal para consumo <em>in natura</em> e exportação.</p>
+                        <div class="variety-seasonality">
+                            <h4 data-i18n="melon.seasonality.title">Sazonalidade</h4>
+                            <p class="seasonality-simple" data-i18n="melon.varieties.amarelo.period">Agosto - Março</p>
+                        </div>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/cantaloupe.png" alt="Melão Cantaloupe" class="variety-img">
+                        </div>
+                        <h3 data-i18n="melon.varieties.cantaloupe.title">Melão Cantaloupe</h3>
+                        <p data-i18n="melon.varieties.cantaloupe.description">Melão premium com polpa alaranjada intensa e aroma marcante. Casca reticulada e textura cremosa. Muito apreciado no mercado internacional.</p>
+                        <div class="variety-seasonality">
+                            <h4 data-i18n="melon.seasonality.title">Sazonalidade</h4>
+                            <p class="seasonality-simple" data-i18n="melon.varieties.cantaloupe.period">Agosto - Janeiro</p>
+                        </div>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/gaia.png" alt="Melão Galia" class="variety-img">
+                        </div>
+                        <h3 data-i18n="melon.varieties.galia.title">Melão Galia</h3>
+                        <p data-i18n="melon.varieties.galia.description">Variedade originária de Israel com casca reticulada dourada. Polpa verde-clara, extremamente doce e suculenta. Excelente para mercados exigentes.</p>
+                        <div class="variety-seasonality">
+                            <h4 data-i18n="melon.seasonality.title">Sazonalidade</h4>
+                            <p class="seasonality-simple" data-i18n="melon.varieties.galia.period">Agosto - Abril</p>
+                        </div>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/sapo.png" alt="Melão Pele-de-sapo" class="variety-img">
+                        </div>
+                        <h3 data-i18n="melon.varieties.sapo.title">Melão Pele-de-sapo</h3>
+                        <p data-i18n="melon.varieties.sapo.description">Melão espanhol de grande porte com casca verde mosqueada. Polpa branca cristalina, muito doce e refrescante. Longa durabilidade pós-colheita.</p>
+                        <div class="variety-seasonality">
+                            <h4 data-i18n="melon.seasonality.title">Sazonalidade</h4>
+                            <p class="seasonality-simple" data-i18n="melon.varieties.sapo.period">Agosto - Março</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-commercialization">
+            <div class="container">
+                <h2 data-i18n="melon.commercialization.title">Comercialização</h2>
+                <div class="commercialization-grid">
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="package" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="melon.commercialization.packaging.title">Embalagem</h3>
+                        <div class="spec-details">
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="melon.commercialization.packaging.net">Peso Líquido:</span>
+                                <span class="spec-value">13 kg</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="melon.commercialization.packaging.gross">Peso Bruto:</span>
+                                <span class="spec-value">14 kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="truck" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="melon.commercialization.pallet.title">Pallet</h3>
+                        <div class="spec-details">
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="melon.commercialization.pallet.boxes">Caixas por Pallet:</span>
+                                <span class="spec-value">48</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="ruler" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="melon.commercialization.calibers.title">Calibres</h3>
+                        <div class="calibers-list">
+                            <span class="caliber-item">5</span>
+                            <span class="caliber-item">6</span>
+                            <span class="caliber-item">7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-contact">
+            <div class="container">
+                <h2 data-i18n="melon.contact.title">Interessado em Melão?</h2>
+                <p data-i18n="melon.contact.subtitle">Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.</p>
+                <a href="../../index.html#contact" class="cta-button" data-i18n="watermelon.contact.cta">Solicitar Cotação</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals">
+                </div>
+                <div class="footer-info">
+                    <p data-i18n="footer.text">© 2026 Marques & Mariano Tropicals. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lang-float" aria-label="Selecionar idioma">
+        <button class="lang-float-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+            <span class="lang-code">PT</span>
+        </button>
+        <div class="lang-float-menu" role="listbox" aria-label="Idiomas">
+            <button class="lang-option" type="button" role="option" data-lang="pt-BR" aria-selected="true">
+                <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+                <span class="lang-name">Português</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="en" aria-selected="false">
+                <span class="lang-flag lang-flag--en" aria-hidden="true"></span>
+                <span class="lang-name">English</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="es" aria-selected="false">
+                <span class="lang-flag lang-flag--es" aria-hidden="true"></span>
+                <span class="lang-name">Español</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamão - MM Tropicals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../../index.html" class="logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" data-i18n="nav.home">Início</a></li>
+                    <li><a href="../../index.html#about" data-i18n="nav.about">Sobre</a></li>
+                    <li class="portfolio-menu">
+                        <a href="#" class="portfolio-toggle" data-i18n="nav.portfolio">Portfólio ▼</a>
+                        <div class="portfolio-dropdown">
+                            <a href="../manga/index.html" data-i18n="fruits.mango">Manga</a>
+                            <a href="../melao/index.html" data-i18n="fruits.melon">Melão</a>
+                            <a href="../limao/index.html" data-i18n="fruits.lime">Limão</a>
+                            <a href="../uva/index.html" data-i18n="fruits.grape">Uva</a>
+                            <a href="../melancia/index.html" data-i18n="fruits.watermelon">Melancia</a>
+                            <a href="../banana/index.html" data-i18n="fruits.banana">Banana</a>
+                            <a href="../coco/index.html" data-i18n="fruits.coconut">Coco</a>
+                            <a href="../mamao/index.html" data-i18n="fruits.papaya">Mamão</a>
+                        </div>
+                    </li>
+                    <li><a href="../../index.html#water" data-i18n="nav.quality">Qualidade</a></li>
+                    <li><a href="../../index.html#contact" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fruit-hero">
+            <div class="fruit-hero-image">
+                <img src="imagens/heromamao.webp" alt="Mamão" class="hero-fruit-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="fruit-hero-content">
+                    <h1 class="fruit-title" data-i18n="papaya.title">Mamão</h1>
+                    <p class="fruit-subtitle" data-i18n="papaya.subtitle">Fruta tropical de polpa doce e suculenta, rica em vitaminas A e C. Possui formato alongado e casca lisa que varia do verde ao amarelo quando maduro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-seasonality">
+            <div class="container">
+                <h2 data-i18n="papaya.seasonality.title">Sazonalidade</h2>
+                <div class="seasonality-chart">
+                    <div class="months-grid">
+                        <div class="month-item high" data-month="jan">
+                            <span class="month-name" data-i18n="months.jan">Jan</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="feb">
+                            <span class="month-name" data-i18n="months.feb">Fev</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="mar">
+                            <span class="month-name" data-i18n="months.mar">Mar</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="apr">
+                            <span class="month-name" data-i18n="months.apr">Abr</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="may">
+                            <span class="month-name" data-i18n="months.may">Mai</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="jun">
+                            <span class="month-name" data-i18n="months.jun">Jun</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="jul">
+                            <span class="month-name" data-i18n="months.jul">Jul</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="aug">
+                            <span class="month-name" data-i18n="months.aug">Ago</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="sep">
+                            <span class="month-name" data-i18n="months.sep">Set</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="oct">
+                            <span class="month-name" data-i18n="months.oct">Out</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="nov">
+                            <span class="month-name" data-i18n="months.nov">Nov</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="dec">
+                            <span class="month-name" data-i18n="months.dec">Dez</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color high"></div>
+                            <span data-i18n="papaya.seasonality.high">Alta Disponibilidade</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color medium"></div>
+                            <span data-i18n="papaya.seasonality.medium">Média Disponibilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-regions">
+            <div class="container">
+                <h2 data-i18n="papaya.regions.title">Nossos Parceiros Produtores pelo Brasil</h2>
+                <div class="regions-content">
+                    <div class="regions-map">
+                        <img src="imagens/mapamamao.png" alt="Mapa das principais regiões produtoras de mamão no Brasil" class="brazil-map">
+                    </div>
+                    <div class="regions-info">
+                        <div class="region-highlight">
+                            <div class="cities-grid">
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Bahia</h4>
+                                        <p data-i18n="papaya.regions.bahia.description">Principal estado produtor de mamão do Brasil, com condições climáticas ideais e tecnologia avançada para produção durante todo o ano.</p>
+                                    </div>
+                                </div>
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Espírito Santo</h4>
+                                        <p data-i18n="papaya.regions.espiritosanto.description">Segundo maior produtor nacional, reconhecido pela qualidade superior e tecnologia de cultivo sustentável.</p>
+                                    </div>
+                                </div>
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Rio Grande do Norte</h4>
+                                        <p data-i18n="papaya.regions.riograndedonorte.description">Região estratégica com clima semiárido favorável e irrigação tecnificada para produção contínua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-varieties">
+            <div class="container">
+                <h2 data-i18n="papaya.varieties.title">Variedades</h2>
+                <div class="varieties-grid">
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/sunrise.webp" alt="Mamão Sunrise Solo" class="variety-img">
+                        </div>
+                        <h3 data-i18n="papaya.varieties.sunrise.title">Sunrise Solo cv. 72/12</h3>
+                        <p data-i18n="papaya.varieties.sunrise.description">Variedade premium com 13 ºBrix, polpa doce e consistente, ideal para exportação e mercados exigentes.</p>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/alianca2.webp" alt="Mamão Aliança" class="variety-img">
+                        </div>
+                        <h3 data-i18n="papaya.varieties.alianca.title">Aliança</h3>
+                        <p data-i18n="papaya.varieties.alianca.description">Variedade nacional com 13 ºBrix, excelente sabor e resistência, adequada para diversos mercados.</p>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/kapoho.webp" alt="Mamão Kapoho Solo" class="variety-img">
+                        </div>
+                        <h3 data-i18n="papaya.varieties.kapoho.title">Kapoho Solo</h3>
+                        <p data-i18n="papaya.varieties.kapoho.description">Variedade tradicional havaiana, frutos pequenos e doces, muito apreciada no mercado internacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-commercialization">
+            <div class="container">
+                <h2 data-i18n="papaya.commercialization.title">Comercialização</h2>
+                <div class="commercialization-grid">
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="package" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="papaya.commercialization.specs.title">Especificações Técnicas</h3>
+                        <div class="spec-details">
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="papaya.commercialization.pallet.boxes">Caixas por Pallet:</span>
+                                <span class="spec-value">80</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">°Brix:</span>
+                                <span class="spec-value">13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-contact">
+            <div class="container">
+                <h2 data-i18n="papaya.contact.title">Interessado em Mamão?</h2>
+                <p data-i18n="papaya.contact.subtitle">Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.</p>
+                <a href="../../index.html#contact" class="cta-button" data-i18n="papaya.contact.cta">Solicitar Cotação</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals">
+                </div>
+                <div class="footer-info">
+                    <p data-i18n="footer.text">© 2026 Marques & Mariano Tropicals. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lang-float" aria-label="Selecionar idioma">
+        <button class="lang-float-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+            <span class="lang-code">PT</span>
+        </button>
+        <div class="lang-float-menu" role="listbox" aria-label="Idiomas">
+            <button class="lang-option" type="button" role="option" data-lang="pt-BR" aria-selected="true">
+                <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+                <span class="lang-name">Português</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="en" aria-selected="false">
+                <span class="lang-flag lang-flag--en" aria-hidden="true"></span>
+                <span class="lang-name">English</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="es" aria-selected="false">
+                <span class="lang-flag lang-flag--es" aria-hidden="true"></span>
+                <span class="lang-name">Español</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

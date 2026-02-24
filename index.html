@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marques & Mariano Tropicals - Exportação de Frutos Tropicais <em>in Natura</em> do Brasil">
+    <title>Marques & Mariano Tropicals | Exportação de Frutos Tropicais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260106">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">
+                    <img src="imagens/logo branco.png" alt="Marques & Mariano Tropicals" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                    <li class="portfolio-menu">
+                        <a href="#" class="portfolio-toggle" data-i18n="nav.portfolio">Portfólio ▼</a>
+                        <div class="portfolio-dropdown">
+                            <a href="#" onclick="window.open('portfolio/manga/index.html', '_self')" data-i18n="fruits.mango">Manga</a>
+                            <a href="#" onclick="window.open('portfolio/melao/index.html', '_self')" data-i18n="fruits.melon">Melão</a>
+                            <a href="#" onclick="window.open('portfolio/limao/index.html', '_self')" data-i18n="fruits.lime">Limão</a>
+                            <a href="#" onclick="window.open('portfolio/uva/index.html', '_self')" data-i18n="fruits.grape">Uva</a>
+                            <a href="#" onclick="window.open('portfolio/melancia/index.html', '_self')" data-i18n="fruits.watermelon">Melancia</a>
+                            <a href="#" onclick="window.open('portfolio/banana/index.html', '_self')" data-i18n="fruits.banana">Banana</a>
+                            <a href="#" onclick="window.open('portfolio/coco/index.html', '_self')" data-i18n="fruits.coconut">Coco</a>
+                            <a href="#" onclick="window.open('portfolio/mamao/index.html', '_self')" data-i18n="fruits.papaya">Mamão</a>
+                        </div>
+                    </li>
+                    <li><a href="#water" data-i18n="nav.quality">Qualidade</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title" data-i18n="hero.title">Do Brasil para o mundo!</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">A Marques & Mariano Tropicals exporta e distribui frutos tropicais <em>in natura</em> com padrão internacional. Atendemos importadores, distribuidores e redes varejistas com qualidade, rastreabilidade e logística segura do Brasil até o seu mercado.</p>
+                    <h3 class="portfolio-title" data-i18n="hero.portfolio">Nosso Portfólio</h3>
+                    <div class="fruit-icons">
+                        <a href="./portfolio/manga/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/manga2.jpg" alt="Manga" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.mango">Manga</span>
+                        </a>
+                        <a href="./portfolio/melao/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/melao1.webp" alt="Melão" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.melon">Melão</span>
+                        </a>
+                        <a href="./portfolio/limao/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/limao2.jpg" alt="Limão" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.lime">Limão</span>
+                        </a>
+                        <a href="./portfolio/uva/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/uva1.webp" alt="Uva" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.grape">Uva</span>
+                        </a>
+                        <a href="./portfolio/melancia/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/melancia3.jpg" alt="Melancia" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.watermelon">Melancia</span>
+                        </a>
+                        <a href="./portfolio/banana/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/banana3.jpg" alt="Banana" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.banana">Banana</span>
+                        </a>
+                        <a href="./portfolio/coco/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/coconut1.webp" alt="Coco" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.coconut">Coco</span>
+                        </a>
+                        <a href="./portfolio/mamao/index.html" class="fruit-item">
+                            <div class="fruit-icon fruit-icon-image">
+                                <img src="imagens/frutos/mamao2.jpg" alt="Mamão" class="fruit-image">
+                            </div>
+                            <span class="fruit-name" data-i18n="fruits.papaya">Mamão</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about wave-divider">
+            <div class="container">
+                <h2 data-i18n="about.title">Sobre a Marques & Mariano Tropicals</h2>
+                <p class="about-intro" data-i18n="about.intro">Somos uma empresa especializada na exportação de frutos tropicais <em>in natura</em> do Brasil para os principais mercados internacionais, com presença global consolidada. Atendemos grandes distribuidores e redes de supermercados em todos os continentes, utilizando nossa relevante rede de relacionamentos e parceiros comerciais para expansão contínua de negócios.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+                        <h3 data-i18n="about.card1.title">Qualidade Premium</h3>
+                        <p data-i18n="about.card1.text">Trabalhamos com frutos tropicais de padrão internacional, com certificações e rastreabilidade total da produção.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon"><i data-lucide="globe" aria-hidden="true"></i></div>
+                        <h3 data-i18n="about.card2.title">Presença Global</h3>
+                        <p data-i18n="about.card2.text">Atendemos mais de 20 países em todos os continentes, com operações 365 dias por ano e rastreabilidade completa.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon"><i data-lucide="award" aria-hidden="true"></i></div>
+                        <h3 data-i18n="about.card3.title">Experiência</h3>
+                        <p data-i18n="about.card3.text">Forte histórico no mercado de exportação com excelência em serviço, confiabilidade e qualidade.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label" data-i18n="about.stat1">Países Atendidos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label" data-i18n="about.stat2">Rastreabilidade</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">365</div>
+                        <div class="stat-label" data-i18n="about.stat3">Dias de Produção</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="export" class="export-services wave-divider">
+            <div class="container">
+                <h2 data-i18n="export.title">Serviços de Exportação</h2>
+                <div class="export-grid">
+                    <div class="export-card">
+                        <h3 data-i18n="export.card1.title">Exportação Direta</h3>
+                        <ul>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card1.item1">Operação com produtores integrados</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card1.item2">Gerenciamento de trâmites logísticos e aduaneiros</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card1.item3">Documentação aduaneira completa</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card1.item4">Inteligência de mercado</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card1.item5">Seleção de parceiros locais</span></li>
+                        </ul>
+                    </div>
+                    <div class="export-card">
+                        <h3 data-i18n="export.card2.title">Exportação Back-to-Back</h3>
+                        <ul>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card2.item1">Ponte entre empresas estrangeiras</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card2.item2">Colaboração global eficiente</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card2.item3">Redução de custos logísticos</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card2.item4">Agilidade nas transações</span></li>
+                            <li><i class="list-icon" data-lucide="check" aria-hidden="true"></i><span data-i18n="export.card2.item5">Respostas rápidas às demandas</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team wave-divider">
+            <div class="container">
+                <h2 data-i18n="team.title">Nossos Especialistas</h2>
+                <p class="team-intro" data-i18n="team.intro">Conheça os especialistas que lideram a Marques & Mariano Tropicals em uma parceria de excelência, garantindo qualidade técnica e experiência comercial em cada etapa do processo de exportação de frutos tropicais.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="imagens/equipe/IMG_5502.webp" alt="Pedro Marques" class="member-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 data-i18n="team.pedro.name">Pedro Marques</h3>
+                            <h4 data-i18n="team.pedro.title">Engenheiro Agrônomo</h4>
+                            <p data-i18n="team.pedro.description">Engenheiro Agrônomo formado pelo Instituto Federal do Triângulo Mineiro, com especialização em exportação de frutas tropicais brasileiras. Possui sólida experiência na aplicação de princípios ESG na agricultura, envolvendo avaliação de conformidade, sustentabilidade produtiva, governança de processos e adequação a normas internacionais. Atua de forma estratégica na estruturação de sistemas agrícolas mais eficientes, rastreáveis e alinhados às exigências do mercado externo.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="imagens/equipe/IMG_5552.webp" alt="Leonardo Mariano" class="member-image">
+                        </div>
+                        <div class="team-info">
+                            <h3 data-i18n="team.leonardo.name">Leonardo Mariano</h3>
+                            <h4 data-i18n="team.leonardo.title">Especialista em Exportação</h4>
+                            <p data-i18n="team.leonardo.description">Especialista em exportação de frutas tropicais brasileiras, estruturando operações internacionais com foco em segurança, qualidade e logística eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="water" class="water-diff wave-divider">
+            <div class="container">
+                <h2 data-i18n="water.title">Diferencial dos Frutos: Qualidade Superior</h2>
+                <p class="water-intro" data-i18n="water.intro">Frutos tropicais da região com características superiores de qualidade, favorecendo o melhor aproveitamento para consumo e processamento pelo comprador.</p>
+                <div class="water-grid">
+                    <div class="water-card">
+                        <div class="water-icon"><i data-lucide="droplet" aria-hidden="true"></i></div>
+                        <h3 data-i18n="water.card1.title">Alto rendimento de água</h3>
+                        <p data-i18n="water.card1.text">Seleção do fruto priorizando volume de água e frescor, conforme especificação.</p>
+                    </div>
+                    <div class="water-card">
+                        <div class="water-icon"><i data-lucide="cup-soda" aria-hidden="true"></i></div>
+                        <h3 data-i18n="water.card2.title">Excelente para consumo</h3>
+                        <p data-i18n="water.card2.text">Perfil ideal para mercados que valorizam experiência de consumo e qualidade no <em>in natura</em>.</p>
+                    </div>
+                    <div class="water-card">
+                        <div class="water-icon"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+                        <h3 data-i18n="water.card3.title">Consistência para B2B</h3>
+                        <p data-i18n="water.card3.text">Padronização e critérios comerciais alinhados ao seu mercado e canal de venda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="specs wave-divider">
+            <div class="container">
+                <h2 data-i18n="specs.title">Especificações & Fornecimento (sob consulta)</h2>
+                <p class="specs-intro" data-i18n="specs.intro">Compartilhamos ficha técnica, categorias, embalagens e condições comerciais conforme o seu mercado e destino.</p>
+                <div class="specs-grid">
+                    <div class="specs-item">
+                        <div class="specs-icon"><i data-lucide="clipboard-check" aria-hidden="true"></i></div>
+                        <div class="specs-content">
+                            <h3 data-i18n="specs.item1.title">Seleção e padronização</h3>
+                            <p data-i18n="specs.item1.text">Categorias e critérios alinhados à necessidade do cliente e ao canal de venda.</p>
+                        </div>
+                    </div>
+                    <div class="specs-item">
+                        <div class="specs-icon"><i data-lucide="package" aria-hidden="true"></i></div>
+                        <div class="specs-content">
+                            <h3 data-i18n="specs.item2.title">Embalagem para exportação</h3>
+                            <p data-i18n="specs.item2.text">Opções de embalagem e acondicionamento para preservar o fruto durante a logística.</p>
+                        </div>
+                    </div>
+                    <div class="specs-item">
+                        <div class="specs-icon"><i data-lucide="calendar-days" aria-hidden="true"></i></div>
+                        <div class="specs-content">
+                            <h3 data-i18n="specs.item3.title">Janelas de embarque</h3>
+                            <p data-i18n="specs.item3.text">Programação, volumes e frequência definidos em conjunto com o cliente.</p>
+                        </div>
+                    </div>
+                    <div class="specs-item">
+                        <div class="specs-icon"><i data-lucide="file-text" aria-hidden="true"></i></div>
+                        <div class="specs-content">
+                            <h3 data-i18n="specs.item4.title">Documentação</h3>
+                            <p data-i18n="specs.item4.text">Suporte com documentação de exportação conforme o destino e requisitos do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="quality" class="quality">
+            <div class="container">
+                <h2 data-i18n="quality.title">Qualidade e Certificações</h2>
+                <p class="quality-intro" data-i18n="quality.intro">Nossos frutos tropicais seguem os mais rigorosos padrões internacionais de qualidade, com certificações reconhecidas globalmente.</p>
+                
+                <div class="certifications-logos">
+                    <div class="certification-item">
+                        <img src="imagens/certifications/globalgap.png" alt="GLOBALGAP Certification" class="certification-logo">
+                    </div>
+                    <div class="certification-item">
+                        <img src="imagens/certifications/globalgap_gasp.png" alt="GLOBALGAP GRASP Certification" class="certification-logo">
+                    </div>
+                    <div class="certification-item">
+                        <img src="imagens/certifications/rainforestalliance.png" alt="Rainforest Alliance Certification" class="certification-logo">
+                    </div>
+                </div>
+                
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <div class="quality-icon"><i data-lucide="file-check" aria-hidden="true"></i></div>
+                        <h3 data-i18n="quality.item1.title">Certificações Internacionais</h3>
+                        <p data-i18n="quality.item1.text">Produtos certificados segundo normas internacionais de segurança alimentar.</p>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-icon"><i data-lucide="microscope" aria-hidden="true"></i></div>
+                        <h3 data-i18n="quality.item2.title">Controle de Qualidade</h3>
+                        <p data-i18n="quality.item2.text">Rigoroso controle em todas as etapas, da colheita ao embarque.</p>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+                        <h3 data-i18n="quality.item3.title">Rastreabilidade Total</h3>
+                        <p data-i18n="quality.item3.text">Sistema completo de rastreamento desde a origem até o destino final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Entre em Contato</h2>
+                <p class="contact-intro" data-i18n="contact.intro">Interessado em nossos produtos? Entre em contato conosco para mais informações.</p>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Nome" data-i18n-placeholder="contact.form.name" required>
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.form.email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="company" placeholder="Empresa" data-i18n-placeholder="contact.form.company">
+                        <input type="text" name="country" placeholder="País" data-i18n-placeholder="contact.form.country" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="contact.form.fruits">Frutos de Interesse:</label>
+                        <div class="fruits-error" id="fruitsError" style="display: none;">
+                            <span data-i18n="contact.form.fruits_required">Por favor, selecione pelo menos uma fruta.</span>
+                        </div>
+                        
+                        <!-- Desktop/Tablet Checkboxes -->
+                        <div class="fruits-selection desktop-fruits">
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="watermelon" name="fruits" value="watermelon">
+                                <label for="watermelon" class="fruit-label">
+                                    <span data-i18n="fruits.watermelon">Melancia</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="melon" name="fruits" value="melon">
+                                <label for="melon" class="fruit-label">
+                                    <span data-i18n="fruits.melon">Melão</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="mango" name="fruits" value="mango">
+                                <label for="mango" class="fruit-label">
+                                    <span data-i18n="fruits.mango">Manga</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="lime" name="fruits" value="lime">
+                                <label for="lime" class="fruit-label">
+                                    <span data-i18n="fruits.lime">Limão</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="grape" name="fruits" value="grape">
+                                <label for="grape" class="fruit-label">
+                                    <span data-i18n="fruits.grape">Uva</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="papaya" name="fruits" value="papaya">
+                                <label for="papaya" class="fruit-label">
+                                    <span data-i18n="fruits.papaya">Mamão</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="banana" name="fruits" value="banana">
+                                <label for="banana" class="fruit-label">
+                                    <span data-i18n="fruits.banana">Banana</span>
+                                </label>
+                            </div>
+                            <div class="fruit-checkbox">
+                                <input type="checkbox" id="coconut" name="fruits" value="coconut">
+                                <label for="coconut" class="fruit-label">
+                                    <span data-i18n="fruits.coconut">Coco</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Dropdown -->
+                        <div class="mobile-fruits-dropdown">
+                            <div class="dropdown-toggle" id="fruitsDropdownToggle">
+                                <span class="dropdown-text" data-i18n="contact.form.select_fruits">Selecione os frutos</span>
+                                <span class="dropdown-count" id="fruitsCount"></span>
+                                <i data-lucide="chevron-down" class="dropdown-arrow"></i>
+                            </div>
+                            <div class="dropdown-menu" id="fruitsDropdownMenu">
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="watermelon-mobile" name="fruits" value="watermelon">
+                                    <label for="watermelon-mobile" data-i18n="fruits.watermelon">Melancia</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="melon-mobile" name="fruits" value="melon">
+                                    <label for="melon-mobile" data-i18n="fruits.melon">Melão</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="mango-mobile" name="fruits" value="mango">
+                                    <label for="mango-mobile" data-i18n="fruits.mango">Manga</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="lime-mobile" name="fruits" value="lime">
+                                    <label for="lime-mobile" data-i18n="fruits.lime">Limão</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="grape-mobile" name="fruits" value="grape">
+                                    <label for="grape-mobile" data-i18n="fruits.grape">Uva</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="papaya-mobile" name="fruits" value="papaya">
+                                    <label for="papaya-mobile" data-i18n="fruits.papaya">Mamão</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="banana-mobile" name="fruits" value="banana">
+                                    <label for="banana-mobile" data-i18n="fruits.banana">Banana</label>
+                                </div>
+                                <div class="dropdown-option">
+                                    <input type="checkbox" id="coconut-mobile" name="fruits" value="coconut">
+                                    <label for="coconut-mobile" data-i18n="fruits.coconut">Coco</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="message" placeholder="Mensagem" data-i18n-placeholder="contact.form.message" rows="5" required></textarea>
+                    <button type="submit" data-i18n="contact.form.submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/logo branco.png" alt="Marques & Mariano Tropicals">
+                </div>
+                <div class="footer-info">
+                    <p data-i18n="footer.text">&copy; 2026 Marques & Mariano Tropicals. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lang-float" aria-label="Selecionar idioma">
+        <button class="lang-float-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+            <span class="lang-code">PT</span>
+        </button>
+        <div class="lang-float-menu" role="listbox" aria-label="Idiomas">
+            <button class="lang-option" type="button" role="option" data-lang="pt-BR" aria-selected="true">
+                <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+                <span class="lang-name">Português</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="en" aria-selected="false">
+                <span class="lang-flag lang-flag--en" aria-hidden="true"></span>
+                <span class="lang-name">English</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="es" aria-selected="false">
+                <span class="lang-flag lang-flag--es" aria-hidden="true"></span>
+                <span class="lang-name">Español</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js?v=20260106"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melancia - MM Tropicals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../../index.html" class="logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" data-i18n="nav.home">Início</a></li>
+                    <li><a href="../../index.html#about" data-i18n="nav.about">Sobre</a></li>
+                    <li class="portfolio-menu">
+                        <a href="#" class="portfolio-toggle" data-i18n="nav.portfolio">Portfólio ▼</a>
+                        <div class="portfolio-dropdown">
+                            <a href="../manga/index.html" data-i18n="fruits.mango">Manga</a>
+                            <a href="../melao/index.html" data-i18n="fruits.melon">Melão</a>
+                            <a href="../limao/index.html" data-i18n="fruits.lime">Limão</a>
+                            <a href="../uva/index.html" data-i18n="fruits.grape">Uva</a>
+                            <a href="../melancia/index.html" data-i18n="fruits.watermelon">Melancia</a>
+                            <a href="../banana/index.html" data-i18n="fruits.banana">Banana</a>
+                            <a href="../coco/index.html" data-i18n="fruits.coconut">Coco</a>
+                            <a href="../mamao/index.html" data-i18n="fruits.papaya">Mamão</a>
+                        </div>
+                    </li>
+                    <li><a href="../../index.html#water" data-i18n="nav.quality">Qualidade</a></li>
+                    <li><a href="../../index.html#contact" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fruit-hero">
+            <div class="fruit-hero-image">
+                <img src="imagens/melancia3.webp" alt="Melancia" class="hero-fruit-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="fruit-hero-content">
+                    <h1 class="fruit-title" data-i18n="watermelon.title">Melancia</h1>
+                    <p class="fruit-subtitle" data-i18n="watermelon.subtitle">Fruta grande, cuja polpa é doce, vermelha e com alto teor de água. Sua casca é espessa, e seu interior pode conter sementes ou não, dependendo da variedade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-seasonality">
+            <div class="container">
+                <h2 data-i18n="watermelon.seasonality.title">Sazonalidade</h2>
+                <div class="seasonality-chart">
+                    <div class="months-grid">
+                        <div class="month-item high" data-month="jan">
+                            <span class="month-name" data-i18n="months.jan">Jan</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="feb">
+                            <span class="month-name" data-i18n="months.feb">Fev</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="mar">
+                            <span class="month-name" data-i18n="months.mar">Mar</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="apr">
+                            <span class="month-name" data-i18n="months.apr">Abr</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="may">
+                            <span class="month-name" data-i18n="months.may">Mai</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="jun">
+                            <span class="month-name" data-i18n="months.jun">Jun</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item medium" data-month="jul">
+                            <span class="month-name" data-i18n="months.jul">Jul</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="aug">
+                            <span class="month-name" data-i18n="months.aug">Ago</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="sep">
+                            <span class="month-name" data-i18n="months.sep">Set</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="oct">
+                            <span class="month-name" data-i18n="months.oct">Out</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="nov">
+                            <span class="month-name" data-i18n="months.nov">Nov</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                        <div class="month-item high" data-month="dec">
+                            <span class="month-name" data-i18n="months.dec">Dez</span>
+                            <div class="availability-bar"></div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color high"></div>
+                            <span data-i18n="watermelon.seasonality.high">Alta Disponibilidade</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color medium"></div>
+                            <span data-i18n="watermelon.seasonality.medium">Média Disponibilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-regions">
+            <div class="container">
+                <h2 data-i18n="watermelon.regions.title">Nossos Parceiros Produtores pelo Brasil</h2>
+                <div class="regions-content">
+                    <div class="regions-map">
+                        <img src="imagens/mapamelancia2.png" alt="Mapa das principais regiões produtoras de melancia no Brasil" class="brazil-map">
+                    </div>
+                    <div class="regions-info">
+                        <div class="region-highlight">
+                            <h3 data-i18n="watermelon.regions.saofrancisco.title">Principais Regiões Produtoras</h3>
+                            <p data-i18n="watermelon.regions.saofrancisco.description">Principais regiões produtoras do Brasil, reconhecidas pela excelência em tecnologia de irrigação.</p>
+                            <div class="cities-grid">
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Teixeira de Freitas - BA</h4>
+                                        <p data-i18n="watermelon.regions.teixeira">Maior produtor nacional com 391.528 toneladas anuais.</p>
+                                    </div>
+                                </div>
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Mossoró - RN</h4>
+                                        <p data-i18n="watermelon.regions.rn">Segundo maior produtor. Qualidade premium com cultivo o ano todo.</p>
+                                    </div>
+                                </div>
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Uruana - GO</h4>
+                                        <p data-i18n="watermelon.regions.uruana">Berço da melanicultura irrigada brasileira desde 1968. Produtividade de 45 ton/hectare.</p>
+                                    </div>
+                                </div>
+                                <div class="city-item">
+                                    <div class="city-icon">
+                                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="city-info">
+                                        <h4>Petrolina - PE</h4>
+                                        <p data-i18n="watermelon.regions.pe">Polo de inovação no semiárido. Produtividades recordes de até 61 ton/hectare.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-varieties">
+            <div class="container">
+                <h2 data-i18n="watermelon.varieties.title">Variedades</h2>
+                <div class="varieties-grid">
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/seedless.png" alt="Melancias Seedless" class="variety-img">
+                        </div>
+                        <h3 data-i18n="watermelon.varieties.seedless.title">Seedless</h3>
+                        <p data-i18n="watermelon.varieties.seedless.description">Melancias sem sementes, ideais para consumo direto e exportação premium.</p>
+                    </div>
+                    <div class="variety-card">
+                        <div class="variety-image">
+                            <img src="imagens/sementes.png" alt="Melancias com Sementes" class="variety-img">
+                        </div>
+                        <h3 data-i18n="watermelon.varieties.seeded.title">Com Sementes</h3>
+                        <p data-i18n="watermelon.varieties.seeded.description">Variedades tradicionais com sementes, sabor intenso e alta durabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-commercialization">
+            <div class="container">
+                <h2 data-i18n="watermelon.commercialization.title">Comercialização</h2>
+                <div class="commercialization-grid">
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="package" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="watermelon.commercialization.packaging.title">Embalagem</h3>
+                        <div class="spec-details">
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="watermelon.commercialization.packaging.net">Peso Líquido:</span>
+                                <span class="spec-value">16 kg</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="watermelon.commercialization.packaging.gross">Peso Bruto:</span>
+                                <span class="spec-value">17 kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="truck" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="watermelon.commercialization.pallet.title">Pallet</h3>
+                        <div class="spec-details">
+                            <div class="spec-item">
+                                <span class="spec-label" data-i18n="watermelon.commercialization.pallet.boxes">Caixas por Pallet:</span>
+                                <span class="spec-value">42</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comm-card">
+                        <div class="comm-icon">
+                            <i data-lucide="ruler" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="watermelon.commercialization.calibers.title">Calibres</h3>
+                        <div class="calibers-list">
+                            <span class="caliber-item">4</span>
+                            <span class="caliber-item">5</span>
+                            <span class="caliber-item">6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fruit-contact">
+            <div class="container">
+                <h2 data-i18n="watermelon.contact.title">Interessado em Melancia?</h2>
+                <p data-i18n="watermelon.contact.subtitle">Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.</p>
+                <a href="../../index.html#contact" class="cta-button" data-i18n="watermelon.contact.cta">Solicitar Cotação</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../imagens/logo branco.png" alt="Marques & Mariano Tropicals">
+                </div>
+                <div class="footer-info">
+                    <p data-i18n="footer.text">© 2026 Marques & Mariano Tropicals. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lang-float" aria-label="Selecionar idioma">
+        <button class="lang-float-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+            <span class="lang-code">PT</span>
+        </button>
+        <div class="lang-float-menu" role="listbox" aria-label="Idiomas">
+            <button class="lang-option" type="button" role="option" data-lang="pt-BR" aria-selected="true">
+                <span class="lang-flag lang-flag--br" aria-hidden="true"></span>
+                <span class="lang-name">Português</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="en" aria-selected="false">
+                <span class="lang-flag lang-flag--en" aria-hidden="true"></span>
+                <span class="lang-name">English</span>
+            </button>
+            <button class="lang-option" type="button" role="option" data-lang="es" aria-selected="false">
+                <span class="lang-flag lang-flag--es" aria-hidden="true"></span>
+                <span class="lang-name">Español</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

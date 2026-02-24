@@ -1,0 +1,128 @@
+// Lime specific translations
+const limeTranslations = {
+    'pt-BR': {
+        'lime.title': 'Limão',
+        'lime.subtitle': 'Limão Tahiti, variedade cítrica de alta qualidade com polpa suculenta e sabor ácido característico. Produzido durante todo o ano no Brasil, é ideal tanto para consumo <em>in natura</em> quanto para industrialização.',
+        'lime.seasonality.title': 'Sazonalidade',
+        'lime.seasonality.high': 'Alta Disponibilidade',
+        'lime.seasonality.medium': 'Baixa Disponibilidade',
+        'lime.regions.title': 'Nossos Parceiros Produtores pelo Brasil',
+        'lime.regions.sp.description': 'Maior estado produtor de limão Tahiti do Brasil, com destaque para as cidades de Jales, Jaboticabal e Novo Horizonte, que lideram a produção nacional.',
+        'lime.regions.mg.description': 'Segundo maior estado produtor, com regiões de clima favorável e tecnologia avançada para cultivo de lima ácida de alta qualidade.',
+        'lime.regions.ba.description': 'Região estratégica no Vale do São Francisco com produção considerável de lima ácida, favorecida pela irrigação e clima semiárido.',
+        'lime.varieties.title': 'Variedades',
+        'lime.varieties.tahiti.title': 'Limão Tahiti',
+        'lime.varieties.tahiti.description': 'Variedade brasileira de lima ácida sem sementes, com polpa suculenta e sabor equilibrado. Formato oval com casca lisa de cor verde a amarelo-claro, ideal para consumo <em>in natura</em> e exportação.',
+        'lime.commercialization.title': 'Comercialização',
+        'lime.commercialization.packaging.title': 'Embalagem',
+        'lime.commercialization.packaging.net': 'Peso Líquido:',
+        'lime.commercialization.packaging.gross': 'Peso Bruto:',
+        'lime.commercialization.pallet.air.title': 'Pallet Aéreo',
+        'lime.commercialization.pallet.sea.title': 'Pallet Marítimo', 
+        'lime.commercialization.pallet.boxes': 'Caixas por Pallet:',
+        'lime.commercialization.calibers.title': 'Calibres',
+        'lime.contact.title': 'Interessado em Limão Tahiti?',
+        'lime.contact.subtitle': 'Entre em contato conosco para mais informações sobre disponibilidade, preços e especificações técnicas.',
+        'lime.contact.cta': 'Solicitar Cotação',
+        'months.jan': 'Jan',
+        'months.feb': 'Fev',
+        'months.mar': 'Mar',
+        'months.apr': 'Abr',
+        'months.may': 'Mai',
+        'months.jun': 'Jun',
+        'months.jul': 'Jul',
+        'months.aug': 'Ago',
+        'months.sep': 'Set',
+        'months.oct': 'Out',
+        'months.nov': 'Nov',
+        'months.dec': 'Dez'
+    },
+    'en': {
+        'lime.title': 'Lime',
+        'lime.subtitle': 'Tahiti lime, high-quality citrus variety with juicy pulp and characteristic acidic flavor. Produced year-round in Brazil, ideal for both fresh consumption and industrial processing.',
+        'lime.seasonality.title': 'Seasonality',
+        'lime.seasonality.high': 'High Availability',
+        'lime.seasonality.medium': 'Low Availability',
+        'lime.regions.title': 'Our Producer Partners Across Brazil',
+        'lime.regions.sp.description': 'Brazil\'s largest Tahiti lime producing state, with highlights in the cities of Jales, Jaboticabal and Novo Horizonte, which lead national production.',
+        'lime.regions.mg.description': 'Second largest producing state, with regions of favorable climate and advanced technology for high-quality acid lime cultivation.',
+        'lime.regions.ba.description': 'Strategic region in the São Francisco Valley with considerable acid lime production, favored by irrigation and semi-arid climate.',
+        'lime.varieties.title': 'Varieties',
+        'lime.varieties.tahiti.title': 'Tahiti Lime',
+        'lime.varieties.tahiti.description': 'Brazilian seedless acid lime variety with juicy pulp and balanced flavor. Oval shape with smooth skin from green to light yellow, ideal for fresh consumption and export.',
+        'lime.commercialization.title': 'Commercialization',
+        'lime.commercialization.packaging.title': 'Packaging',
+        'lime.commercialization.packaging.net': 'Net Weight:',
+        'lime.commercialization.packaging.gross': 'Gross Weight:',
+        'lime.commercialization.pallet.air.title': 'Air Pallet',
+        'lime.commercialization.pallet.sea.title': 'Sea Pallet',
+        'lime.commercialization.pallet.boxes': 'Boxes per Pallet:',
+        'lime.commercialization.calibers.title': 'Calibers',
+        'lime.contact.title': 'Interested in Tahiti Lime?',
+        'lime.contact.subtitle': 'Contact us for more information about availability, prices and technical specifications.',
+        'lime.contact.cta': 'Request Quote',
+        'months.jan': 'Jan',
+        'months.feb': 'Feb',
+        'months.mar': 'Mar',
+        'months.apr': 'Apr',
+        'months.may': 'May',
+        'months.jun': 'Jun',
+        'months.jul': 'Jul',
+        'months.aug': 'Aug',
+        'months.sep': 'Sep',
+        'months.oct': 'Oct',
+        'months.nov': 'Nov',
+        'months.dec': 'Dec'
+    },
+    'es': {
+        'lime.title': 'Lima',
+        'lime.subtitle': 'Lima Tahiti, variedad cítrica de alta calidad con pulpa jugosa y sabor ácido característico. Producida durante todo el año en Brasil, ideal tanto para consumo fresco como para industrialización.',
+        'lime.seasonality.title': 'Estacionalidad',
+        'lime.seasonality.high': 'Alta Disponibilidad',
+        'lime.seasonality.medium': 'Baja Disponibilidad',
+        'lime.regions.title': 'Nuestros Socios Productores por Brasil',
+        'lime.regions.sp.description': 'Mayor estado productor de lima Tahiti de Brasil, con destaque en las ciudades de Jales, Jaboticabal y Novo Horizonte, que lideran la producción nacional.',
+        'lime.regions.mg.description': 'Segundo mayor estado productor, con regiones de clima favorable y tecnología avanzada para cultivo de lima ácida de alta calidad.',
+        'lime.regions.ba.description': 'Región estratégica en el Valle de São Francisco con producción considerable de lima ácida, favorecida por irrigación y clima semiárido.',
+        'lime.varieties.title': 'Variedades',
+        'lime.varieties.tahiti.title': 'Lima Tahiti',
+        'lime.varieties.tahiti.description': 'Variedad brasileña de lima ácida sin semillas, con pulpa jugosa y sabor equilibrado. Forma ovalada con cáscara lisa de color verde a amarillo claro, ideal para consumo fresco y exportación.',
+        'lime.commercialization.title': 'Comercialización',
+        'lime.commercialization.packaging.title': 'Embalaje',
+        'lime.commercialization.packaging.net': 'Peso Neto:',
+        'lime.commercialization.packaging.gross': 'Peso Bruto:',
+        'lime.commercialization.pallet.air.title': 'Pallet Aéreo',
+        'lime.commercialization.pallet.sea.title': 'Pallet Marítimo',
+        'lime.commercialization.pallet.boxes': 'Cajas por Pallet:',
+        'lime.commercialization.calibers.title': 'Calibres',
+        'lime.contact.title': '¿Interesado en Lima Tahiti?',
+        'lime.contact.subtitle': 'Contáctenos para más información sobre disponibilidad, precios y especificaciones técnicas.',
+        'lime.contact.cta': 'Solicitar Cotización',
+        'months.jan': 'Ene',
+        'months.feb': 'Feb',
+        'months.mar': 'Mar',
+        'months.apr': 'Abr',
+        'months.may': 'May',
+        'months.jun': 'Jun',
+        'months.jul': 'Jul',
+        'months.aug': 'Ago',
+        'months.sep': 'Sep',
+        'months.oct': 'Oct',
+        'months.nov': 'Nov',
+        'months.dec': 'Dic'
+    }
+};
+
+// Extend main translations with lime specific ones
+if (typeof translations !== 'undefined') {
+    Object.keys(limeTranslations).forEach(lang => {
+        if (translations[lang]) {
+            Object.assign(translations[lang], limeTranslations[lang]);
+        }
+    });
+}
+
+// Inicializar ícones Lucide
+if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+}
