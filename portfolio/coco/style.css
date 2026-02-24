@@ -1,3 +1,18 @@
+/* Prevent horizontal overflow */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /* NOVO MENU PORTFOLIO - MELANCIA PAGE */
 .portfolio-menu {
     position: relative;
@@ -128,9 +143,9 @@
     z-index: 3;
     text-align: center;
     color: var(--white);
-    max-width: 800px;
+    max-width: min(800px, 90vw);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .fruit-title {
@@ -328,10 +343,11 @@
 /* Varieties */
 .varieties-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 90vw), 1fr));
     gap: 3rem;
-    max-width: 800px;
+    max-width: min(800px, 95vw);
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .variety-card {
@@ -402,10 +418,11 @@
 /* Commercialization */
 .commercialization-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 90vw), 1fr));
     gap: 3rem;
-    max-width: 1000px;
+    max-width: min(1000px, 95vw);
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .comm-card {
@@ -608,8 +625,9 @@ h3 {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    max-width: 1000px;
+    max-width: min(1000px, 95vw);
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .regions-map {
@@ -617,8 +635,8 @@ h3 {
 }
 
 .brazil-map {
-    max-width: 500px !important;
-    width: 500px !important;
+    max-width: min(500px, 90vw) !important;
+    width: min(500px, 90vw) !important;
     height: auto !important;
     max-height: 600px !important;
     border-radius: 8px;
@@ -654,9 +672,10 @@ h3 {
 
 .cities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 90vw), 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    padding: 0 1rem;
 }
 
 .city-item {
@@ -711,11 +730,12 @@ h3 {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        padding: 0 1rem;
     }
     
     .brazil-map {
-        max-width: 350px !important;
-        width: 350px !important;
+        max-width: min(350px, 90vw) !important;
+        width: min(350px, 90vw) !important;
     }
     
     .cities-grid {
@@ -726,6 +746,7 @@ h3 {
     .city-item {
         padding: 1.5rem;
         gap: 0.8rem;
+        margin: 0 1rem;
     }
     
     .city-icon {
@@ -740,13 +761,28 @@ h3 {
     .city-info p {
         font-size: 0.9rem;
     }
+    
+    .fruit-hero-content {
+        padding: 0 1rem;
+    }
+    
+    .varieties-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .variety-card {
+        margin: 0 auto;
+        max-width: 90vw;
+    }
 
 }
 
 @media (max-width: 480px) {
     .brazil-map {
-        max-width: 280px !important;
-        width: 280px !important;
+        max-width: min(280px, 85vw) !important;
+        width: min(280px, 85vw) !important;
     }
     
     .region-highlight h3 {
@@ -755,14 +791,88 @@ h3 {
     
     .region-highlight p {
         font-size: 0.9rem;
+        padding: 0 0.5rem;
     }
     
     .city-item {
-        padding: 1.2rem;
+        padding: 1.2rem 1rem;
         flex-direction: column;
         text-align: center;
+        margin: 0 0.5rem;
+    }
+    
+    .fruit-title {
+        font-size: 1.8rem !important;
+    }
+    
+    .fruit-subtitle {
+        font-size: 1rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .months-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .month-item {
+        padding: 0.6rem 0.2rem;
+        min-width: 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
     }
 
+}
+
+@media (max-width: 375px) {
+    .brazil-map {
+        max-width: min(250px, 80vw) !important;
+        width: min(250px, 80vw) !important;
+    }
+    
+    .fruit-title {
+        font-size: 1.6rem !important;
+    }
+    
+    .fruit-subtitle {
+        font-size: 0.95rem !important;
+    }
+    
+    .months-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+        padding: 0 0.5rem;
+    }
+    
+    .month-item {
+        padding: 0.5rem 0.1rem;
+    }
+    
+    .month-name {
+        font-size: 0.7rem;
+    }
+    
+    .city-item {
+        padding: 1rem 0.5rem;
+        margin: 0 0.25rem;
+    }
+    
+    .region-highlight p {
+        font-size: 0.85rem;
+        padding: 0 0.25rem;
+    }
+    
+    .variety-card {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
 }
 
 
