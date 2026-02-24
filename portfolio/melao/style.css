@@ -444,7 +444,7 @@
 /* Varieties */
 .varieties-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     max-width: 800px;
     margin: 0 auto;
@@ -692,9 +692,119 @@
     .availability-bar {
         height: 30px;
     }
+    
+    /* Prevent horizontal overflow */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Break long words */
+    h1, h2, h3, h4, h5, h6, p, span, div {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .varieties-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .variety-card {
+        padding: 2rem;
+        margin: 0;
+    }
+    
+    .cities-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .city-item {
+        padding: 1.5rem;
+    }
+
+    .regions-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .brazil-map {
+        max-width: 350px;
+    }
 }
 
+@media (max-width: 480px) {
+    .variety-card {
+        padding: 1rem;
+    }
+    
+    /* Extra small screens */
+    .fruit-title {
+        font-size: 1.8rem !important;
+        line-height: 1.2;
+    }
+    
+    .fruit-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .variety-card h3 {
+        font-size: 1.4rem;
+    }
+}
 
+/* Extra small screens - preventing any horizontal scroll */
+@media (max-width: 375px) {
+    .fruit-hero-content {
+        padding: 1rem;
+    }
+    
+    .fruit-title {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem;
+    }
+    
+    .fruit-subtitle {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+    
+    .variety-card {
+        padding: 0.8rem;
+        margin: 0;
+    }
+    
+    .variety-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .months-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+    }
+    
+    .month-item {
+        padding: 0.6rem 0.2rem;
+    }
+    
+    .month-name {
+        font-size: 0.7rem;
+    }
+}
 
 /* Simple and clean seasonality design */
 .variety-seasonality {
