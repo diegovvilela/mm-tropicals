@@ -713,11 +713,36 @@
 
 
     .fruit-title {
-        font-size: 2.2rem;
+        font-size: clamp(1.8rem, 4vw, 3rem) !important;
+        line-height: 1.2;
+        hyphens: none;
+        word-break: keep-all;
     }
     
     .fruit-subtitle {
         font-size: 1.1rem;
+    }
+    
+    /* Responsive titles without line breaks */
+    h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem) !important;
+        line-height: 1.2;
+        hyphens: none;
+        word-break: keep-all;
+    }
+    
+    h2 {
+        font-size: clamp(1.4rem, 3.5vw, 2.5rem) !important;
+        line-height: 1.3;
+        hyphens: none;
+        word-break: keep-all;
+    }
+    
+    h3 {
+        font-size: clamp(1.2rem, 3vw, 1.8rem) !important;
+        line-height: 1.4;
+        hyphens: none;
+        word-break: keep-all;
     }
     
     .months-grid {
