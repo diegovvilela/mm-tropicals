@@ -77,11 +77,11 @@ const translations = {
         'quality.item3.text': 'Sistema completo de rastreamento desde a origem até o destino final.',
         'contact.title': 'Entre em Contato',
         'contact.intro': 'Interessado em nossos produtos? Entre em contato conosco para mais informações.',
-        'contact.form.name': 'Nome',
-        'contact.form.email': 'Email',
+        'contact.form.name': 'Nome *',
+        'contact.form.email': 'Email *',
         'contact.form.company': 'Empresa',
-        'contact.form.country': 'País',
-        'contact.form.fruits': 'Frutos de Interesse:',
+        'contact.form.country': 'País *',
+        'contact.form.fruits': 'Frutos de Interesse *:',
         'contact.form.select_fruits': 'Selecione os frutos',
         'contact.form.fruits_required': 'Por favor, selecione pelo menos uma fruta.',
         'contact.form.message': 'Mensagem',
@@ -167,11 +167,11 @@ const translations = {
         'quality.item3.text': 'Complete tracking system from origin to final destination.',
         'contact.title': 'Get in Touch',
         'contact.intro': 'Interested in our products? Contact us for more information.',
-        'contact.form.name': 'Name',
-        'contact.form.email': 'Email',
+        'contact.form.name': 'Name *',
+        'contact.form.email': 'Email *',
         'contact.form.company': 'Company',
-        'contact.form.country': 'Country',
-        'contact.form.fruits': 'Fruits of Interest:',
+        'contact.form.country': 'Country *',
+        'contact.form.fruits': 'Fruits of Interest *:',
         'contact.form.select_fruits': 'Select fruits',
         'contact.form.fruits_required': 'Please select at least one fruit.',
         'contact.form.message': 'Message',
@@ -265,11 +265,11 @@ const translations = {
         'quality.item3.text': 'Sistema completo de rastreo desde el origen hasta el destino final.',
         'contact.title': 'Póngase en Contacto',
         'contact.intro': '¿Interesado en nuestros productos? Contáctenos para más información.',
-        'contact.form.name': 'Nombre',
-        'contact.form.email': 'Email',
+        'contact.form.name': 'Nombre *',
+        'contact.form.email': 'Email *',
         'contact.form.company': 'Empresa',
-        'contact.form.country': 'País',
-        'contact.form.fruits': 'Frutas de Interés:',
+        'contact.form.country': 'País *',
+        'contact.form.fruits': 'Frutas de Interés *:',
         'contact.form.select_fruits': 'Seleccionar frutas',
         'contact.form.fruits_required': 'Por favor, seleccione al menos una fruta.',
         'contact.form.message': 'Mensaje',
@@ -450,7 +450,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const webhookUrl = 'https://n8n-n8n-start.brwjwh.easypanel.host/webhook/c36316d0-9745-4fc9-ae15-1d47cb606d6f';
+            const webhookUrl = 'https://zapsmart.host-zapsmart.com.br/webhook/c36316d0-9745-4fc9-ae15-1d47cb606d6f';
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton ? submitButton.textContent : '';
 
@@ -480,11 +480,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitButton.textContent = langMessages.sending;
                 }
 
+                // Collect selected fruits from both desktop and mobile versions
+                const selectedFruits = [];
+                const allFruitsCheckboxes = contactForm.querySelectorAll('input[name="fruits"]:checked');
+                allFruitsCheckboxes.forEach(checkbox => {
+                    if (!selectedFruits.includes(checkbox.value)) {
+                        selectedFruits.push(checkbox.value);
+                    }
+                });
+
                 const payload = {
                     name: (contactForm.querySelector('[name="name"]') || {}).value || '',
                     email: (contactForm.querySelector('[name="email"]') || {}).value || '',
                     company: (contactForm.querySelector('[name="company"]') || {}).value || '',
                     country: (contactForm.querySelector('[name="country"]') || {}).value || '',
+                    fruits: selectedFruits,
                     message: (contactForm.querySelector('[name="message"]') || {}).value || '',
                     language: currentLanguage,
                     pageUrl: window.location.href,
@@ -494,7 +504,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const response = await fetch(webhookUrl, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer 2b7e1f8c-4a9d-4e2b-9c3a-7f6d5e1b0c8a'
                     },
                     body: JSON.stringify(payload)
                 });
@@ -505,6 +516,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 alert(langMessages.success);
                 contactForm.reset();
+                
+                // Reset mobile fruits counter
+                const fruitsCount = document.getElementById('fruitsCount');
+                if (fruitsCount) {
+                    fruitsCount.classList.remove('show');
+                }
             } catch (err) {
                 alert(langMessages.error);
             } finally {

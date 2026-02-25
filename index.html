@@ -311,15 +311,15 @@
                 <p class="contact-intro" data-i18n="contact.intro">Interessado em nossos produtos? Entre em contato conosco para mais informações.</p>
                 <form class="contact-form">
                     <div class="form-row">
-                        <input type="text" name="name" placeholder="Nome" data-i18n-placeholder="contact.form.name" required>
-                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.form.email" required>
+                        <input type="text" name="name" placeholder="Nome *" data-i18n-placeholder="contact.form.name" required>
+                        <input type="email" name="email" placeholder="Email *" data-i18n-placeholder="contact.form.email" required>
                     </div>
                     <div class="form-row">
                         <input type="text" name="company" placeholder="Empresa" data-i18n-placeholder="contact.form.company">
-                        <input type="text" name="country" placeholder="País" data-i18n-placeholder="contact.form.country" required>
+                        <input type="text" name="country" placeholder="País *" data-i18n-placeholder="contact.form.country" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" data-i18n="contact.form.fruits">Frutos de Interesse:</label>
+                        <label class="form-label" data-i18n="contact.form.fruits">Frutos de Interesse *:</label>
                         <div class="fruits-error" id="fruitsError" style="display: none;">
                             <span data-i18n="contact.form.fruits_required">Por favor, selecione pelo menos uma fruta.</span>
                         </div>
@@ -419,7 +419,7 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="message" placeholder="Mensagem" data-i18n-placeholder="contact.form.message" rows="5" required></textarea>
+                    <textarea name="message" placeholder="Mensagem" data-i18n-placeholder="contact.form.message" rows="5"></textarea>
                     <button type="submit" data-i18n="contact.form.submit">Enviar Mensagem</button>
                 </form>
             </div>
