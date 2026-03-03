@@ -21,9 +21,8 @@ html, body {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--primary-green);
+    background: rgba(0, 104, 55, 0.7);
     min-width: 200px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 0.5rem 0;
     opacity: 0;
@@ -31,6 +30,8 @@ html, body {
     transform: translateY(-10px);
     transition: all 0.3s ease;
     z-index: 1000;
+    backdrop-filter: blur(20px);
+    box-shadow: none;
 }
 
 .portfolio-menu:hover .portfolio-dropdown,
@@ -65,7 +66,7 @@ html, body {
         visibility: visible !important;
         transform: none !important;
         box-shadow: none;
-        background: rgba(0, 0, 0, 0.15);
+        background: rgba(0, 104, 55, 0.7);
         border-radius: 8px;
         margin: 0.5rem 0 0 0;
         padding: 0;
@@ -73,6 +74,8 @@ html, body {
         overflow: hidden;
         transition: max-height 0.3s ease;
         width: 100%;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 
     .portfolio-menu.active .portfolio-dropdown {
@@ -80,21 +83,22 @@ html, body {
     }
 
     .portfolio-dropdown a {
-        padding: 0.8rem 1.5rem !important;
-        font-size: 0.95rem !important;
-        font-weight: 500 !important;
-        color: rgba(255, 255, 255, 0.9) !important;
-        border-radius: 0 !important;
-        margin: 0 !important;
-        text-transform: capitalize !important;
-        letter-spacing: 0.05em !important;
+        display: block;
+        padding: 0.8rem 1.2rem !important;
+        color: var(--white) !important;
+        text-decoration: none;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.08em !important;
+        transition: all 0.3s ease;
     }
 
     .portfolio-dropdown a:hover {
-        background: rgba(249, 220, 0, 0.2) !important;
+        background: rgba(249, 220, 0, 0.15) !important;
         color: var(--primary-yellow) !important;
-        transform: translateX(5px) !important;
-        padding-left: 2rem !important;
+        padding-left: 1.5rem !important;
+        transform: none !important;
     }
 }
 
