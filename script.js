@@ -450,7 +450,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const webhookUrl = 'https://zapsmart.host-zapsmart.com.br/webhook/c36316d0-9745-4fc9-ae15-1d47cb606d6f';
+            const webhookUrl = '/api/lead';
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton ? submitButton.textContent : '';
 
@@ -504,8 +504,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const response = await fetch(webhookUrl, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': 'Bearer 2b7e1f8c-4a9d-4e2b-9c3a-7f6d5e1b0c8a'
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(payload)
                 });
@@ -533,12 +532,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // CTA Button (only if exists)
     const ctaButton = document.querySelector('.cta-button');
-    ctaButton.addEventListener('click', function() {
-        document.querySelector('#about').scrollIntoView({ 
-            behavior: 'smooth' 
+    if (ctaButton) {
+        ctaButton.addEventListener('click', function() {
+            document.querySelector('#about').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
         });
-    });
+    }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -553,9 +555,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 100) {
+        
+        if (!navbar) {
+            return;
+        }
+        
+        const scrollY = window.scrollY;
+        
+        if (scrollY > 100) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
